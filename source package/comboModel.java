@@ -37,4 +37,8 @@ public class comboModel {
          return hg;
      }
      
+     public void addItem(String nama, float harga){
+         this.items.put(nama, harga);
+     }
+     
 }
