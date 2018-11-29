@@ -29,4 +29,12 @@ public class comboModel {
          return nm;
      }
      
+     public ArrayList<Float> getHargaItem(){
+         ArrayList<Float> hg = new ArrayList<>();
+         for(float item : this.items.values()){
+             hg.add(item);
+         }
+         return hg;
+     }
+     
 }
