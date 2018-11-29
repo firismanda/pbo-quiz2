@@ -13,5 +13,12 @@ public class itemsClass {
     float   harga;          //variabel untuk menyimpan harga item yang terdaftar
     int     banyakItems;    //variabel untuk menyimpan banyak item yang dibeli
 
+    public itemsClass(String nama, float harga, int banyakItems) { //membuat konstruktor
+        this.nama = nama;
+        this.harga = harga;
+        this.banyakItems = banyakItems;
+    }
 
+
+    
 }
