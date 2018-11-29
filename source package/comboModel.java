@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /*
@@ -19,4 +20,13 @@ public class comboModel {
          this.items.put("Susu",new Float(5000));
          this.items.put("Gula",new Float(3000));
      }
+     
+     public ArrayList<String> getNamaItem(){
+         ArrayList<String> nm = new ArrayList<>();
+         for(String item : this.items.keySet()){
+             nm.add(item);
+         }
+         return nm;
+     }
+     
 }
