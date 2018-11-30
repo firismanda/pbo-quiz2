@@ -15,4 +15,9 @@ public class xxTransaksi {
     private ArrayList<itemsClass> items = new ArrayList<>(); //variabel untuk menyimpan itemsClass
     private float total; // variabel untuk menyimpan total
 
+    public xxTransaksi(String code, float total) { // Konstruktor
+        this.code = code;
+        this.total = total;
+    }
+     
 }
