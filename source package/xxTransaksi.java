@@ -28,4 +28,15 @@ public class xxTransaksi {
         this.total = total;
     }
     
+    public String Detail(){ //method untuk outputannya
+        setTotal();
+        String str = "";
+        str += "Kode\t\t: "+this.code+" \n";
+        str += "List Barang Belanja : \n";
+        for(itemsClass item : this.items){
+            str += "\t" + item.getNama() + "(x" + item.getBanyakItems() + ") : " + item.getTotal() + "\n";
+        }
+        str += "Total\t\t : " + this.total;
+        return str;
+    }
 }
