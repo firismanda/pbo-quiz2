@@ -20,4 +20,12 @@ public class xxTransaksi {
         this.total = total;
     }
      
+    public void setTotal(){ //setter untuk setTotal
+        float total = 0;
+        for(itemsClass item : this.items){
+            total += item.getTotal();
+        }
+        this.total = total;
+    }
+    
 }
